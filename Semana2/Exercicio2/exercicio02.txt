@@ -1,0 +1,18 @@
+Exercício 2:
+a) Liste e descreva o que são as 4 etapas do processo de compilação.
+
+•Preprocessing -> código fonte é incluído, macros ou definições são substituídos e processados, comentários são processados.
+
+	•Compilation Proper -> código fonte é transformado em código assembly ( código que se assimila ao código de uma máquina/ binário).
+
+	•Assembly  -> o assembler pega o código assembly e o converte, se tornando em um código de fato binário.
+
+	•Linking -> as bibliotecas são adicionadas no código binário, e assim, cria-se um arquivo binário executável.
+
+b)O compiladorgcc  permite  fornecer  parâmetros  extras,  que modificamdesde  a  emissão  de erros atéo binário final, o otimizando para determinados comportamentos. Explique a função dos seguintes parâmetros:
+i) -static -> parâmetro que vincula bibliotecas estáticas.
+ii) -g -> parâmetro que inclui informações de depuração (meio de solucionar problemas de um problema) no binário.
+iii) -pedantic -> parâmetro que notifica avisos do padrão ANSI/ISO C.
+iv) -Wall -> parâmetro que habilita as notificações de erro.
+v) -Os -> parâmetro que especifica o nome do arquivo de saída.
+vi) -O3 -> parâmetro que especifica o nível de otimização 3.
