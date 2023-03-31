@@ -1,0 +1,25 @@
+O Capítulo 3 do livro "Advanced Linux Programming" é dedicado ao gerenciamento de processos em sistemas operacionais baseados em Unix, com foco no Linux.
+
+Uma instância em execução de um programa é chamada de processo, cada janela de terminal está executando um shell e cada shell em execução é também um processo.
+Ao realizar um comando de um shell, o programa correspondente é executado em um novo processo e o shell volta quanto o processo é concluído. Programadores avançados geralmente usam vários processos em uma mesma aplicação. 
+A maioria das funções de manipulação de processos são semelhantes à aquelas em outros sistemas UNIX.
+
+O capítulo está dividido em quatro seções principais, cada uma abordando diferentes aspectos do gerenciamento de processos.
+
+
+A seção introdutória Looking at Processes oferece uma visão geral dos conceitos básicos relacionados a processos. Um processo é um programa em execução, que tem sua própria área de memória e pode interagir com o sistema operacional e outros processos. Cada processo é identificado por um identificador de processo (PID) exclusivo. IDs de processo são números de 16 bits que são atribuídos sequencialmente pelo sistema Linux à medida que novos processos são criados.
+O capítulo também discute a hierarquia de processos, na qual um processo pode criar processos filhos, formando uma árvore de processos. Outros conceitos importantes incluem os estados do processo, como em execução, suspenso ou encerrado, e as informações que podem ser obtidas sobre um processo, como seu PID, ID do usuário e uso de recursos.
+
+
+A segunda seção do capítulo trata do Creating Processes. 
+
+A chamada de sistema fork() é usada para criar um processo filho a partir de um processo pai. O processo filho herda o espaço de endereço do pai e pode executar um programa diferente usando a chamada de sistema exec(). O processo pai pode esperar que o processo filho termine usando a chamada de sistema wait(). O capítulo também discute outras chamadas de sistema relacionadas à criação de processos, como vfork() e clone().
+
+
+A terceira seção do capítulo, Signals, discute os diferentes aspectos dos processos em execução. Isso inclui a identificação de processos usando seus identificadores de processo (PID), bem como informações sobre o uso de CPU e memória de um processo. O capítulo também aborda o escalonamento de processos, que é a maneira como o sistema operacional decide qual processo deve ser executado em determinado momento.
+
+A quarta seção do capítulo, Process Termination, é dedicada aos sinais. Os sinais são uma forma de comunicação entre processos ou entre processos e o sistema operacional. O capítulo explica como enviar e receber sinais, bem como como lidar com sinais em um processo. Os sinais podem ser usados para interromper a execução de um processo, informar um processo sobre eventos externos ou lidar com erros.
+
+A última seção do capítulo discute como terminar processos. A chamada de sistema exit() permite que um processo termine normalmente, enquanto a chamada de sistema kill() pode ser usada para encerrar um processo de forma forçada. O capítulo também aborda outras formas de encerrar processos, como o uso de sinais. Além disso, o capítulo discute a limpeza de recursos, como semáforos e arquivos, quando um processo é encerrado.
+
+No geral, o Capítulo 3 do livro "Advanced Linux Programming" oferece uma visão abrangente do gerenciamento de processos em sistemas operacionais baseados em Unix, abrangendo desde a criação de processos até o encerramento e tratamento de sinais. O capítulo é uma leitura essencial para qualquer programador que deseje desenvolver aplicativos de sistema em Linux.
