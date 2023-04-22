@@ -1,0 +1,15 @@
+Apresente uma explicação sobre: 
+1) qual o limite de bytes a serem enviados por pacotes TCP e UDP;
+Tanto o TCP quanto UDP possuem a mesma limitaçaõ de bytes totais, que são 65535, a diferença está entre aqueles destinados para o cabeçalho e para o cabeçalho IP.
+Protocolo TCP -> 80 (ou 20 por padrão) do cabeçalho e 20 do cabeçalho IP.
+Protocolo UDP -> 8 do cabeçalho e 20 do cabeçalho IP.
+
+
+2) como um arquivo grande pode ser transmitido via internet;
+
+ Pode ser transmitido por protocolos UDP e TCP, o protocolo UDP por ser mais rápido na transmissão de pacotes, suportar broadcasting e multicasting, é um protocolo muito utilizado para os serviços de streaming via internet, apesar de mais simples, por isso utiliza-se o protocolo UDP para o envio de arquivos grandes via internet.
+
+3) qual a diferença entre as implementações TCP e UDP para esse problema.
+
+Protocolo TCP -> alta confiabilidade e segurança, envio de qualidade elevada sem perca do conteúdo
+Protocolo UDP -> transmissão de dados rápida e eficiente, mas pode acontecer perda de dados
