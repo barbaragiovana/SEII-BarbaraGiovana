@@ -1,0 +1,8 @@
+User Experience Design se refere ao processo de criar produtos ou serviços que oferecem uma experiência positiva e satisfatória aos usuários. O UX Design envolve a consideração de diversos aspectos, como usabilidade, acessibilidade, estética, desempenho e funcionalidade, a fim de atender às necessidades e expectativas dos usuários.
+O objetivo principal do UX Design é facilitar a interação entre os usuários e os produtos ou serviços, proporcionando uma experiência intuitiva e agradável. Isso é alcançado por meio de uma abordagem centrada no usuário, que envolve pesquisa, prototipagem, testes e iterações para entender e atender às necessidades dos usuários.
+Além disso, o UX Design também considera aspectos visuais e estéticos para criar uma experiência agradável. Isso inclui o uso de cores, tipografia, layout e elementos visuais para garantir que a interface do aplicativo seja intuitiva e esteticamente agradável.
+Em resumo, o UX Design é essencial para criar produtos e serviços que atendam às necessidades dos usuários, oferecendo uma experiência satisfatória. Ele combina aspectos funcionais, estéticos e emocionais para garantir que os usuários possam interagir com facilidade e prazer, promovendo uma relação positiva entre os usuários e os produtos ou serviços.
+
+
+User Interface -> Envolve àquilo que é visto pelo usuário, referências visuais. É a apresentação do produto final, pesquisa de design e branding estão muito associados.
+User Experience -> Pesquisar e desenvolver todos os aspectos da interação com o usuário, para garantir que necessidades sejam atendidas. Envolve a intersecção entre necessidade do usuário, necessidade do negócio e viabilidade do produto. Testes e simulação.

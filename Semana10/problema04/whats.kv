@@ -1,0 +1,152 @@
+BoxLayout:
+    canvas:
+		Color:
+			rgba:0.92,0.92,0.92,1
+        Rectangle:
+            size:self.size
+            pos:self.pos
+    orientation:'vertical'
+    AppBar:
+	Space:
+    Menu:
+    ScrollView:
+        BoxLayout:
+            size_hint_y:None
+            height:self.minimum_height
+            orientation:'vertical'
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Chat:
+            Widget:
+
+<AppBar@BoxLayout>:
+    padding:'6dp'
+    canvas:
+        Color:
+            rgba:0,0.3,0.13,1
+        Rectangle:
+            size:self.size
+            pos:self.pos
+    size_hint_y:None
+    height:'50dp'
+    Label:
+        text:'Whatsapp 2'
+        bold:True
+        font_size:'22dp'
+        haling:'left'
+        text_size:self.size
+        valign:'center'
+        padding_x:'10dp'
+    Icon:
+        background_normal:'assets/lupa.png'
+        active:True
+    Icon:
+        background_normal:'assets/pontos.png'
+        active:True
+
+<Chat@BoxLayout>:
+    canvas:
+        Color:
+            rgba:0,0,0,0.5
+        Line:
+            width:1
+            points:self.x+self.height, self.y, self.x+self.width-20, self.y
+    size_hint_y:None
+    height:'100dp'
+    padding:'10dp'
+    Foto:
+    BoxLayout:
+        orientation:'vertical'
+        padding:'12dp'
+        Label:
+            text:'Anya Forger'
+            color:0,0,0,1
+            text_size:self.size
+            halign:'left'
+            valign:'center'
+            bold:True
+        Label:
+            text:'Anya: waku waku'
+            color:0,0,0,0.8
+            text_size:self.size
+            halign:'left'
+            valign:'center'
+    BoxLayout:
+        size_hint_x:None
+        width:'100dp'
+        padding:'7dp'
+        Label:
+            text:'14:24PM'
+            color:0,0,0,0.5
+            text_size:self.size
+            valign:'top' 
+            halign:'right'
+
+<Space@Widget>:
+	canvas:
+		Color:
+			rgba:0,0.3,0.13,1
+        Rectangle:
+            size:self.size
+            pos:self.pos
+	size_hint_y:None
+	height:'16dp'
+
+<Menu@BoxLayout>:
+    canvas:
+        Color:
+            rgba:0,0.3,0.13,1
+        Rectangle:
+            size:self.size
+            pos:self.pos
+    padding:'2dp'
+    spacing:'10dp'
+    size_hint_y:None
+    height:'35dp'
+    Icon:
+        background_normal:'assets/camera.png'
+    MenuButton:
+        text:'CHATS'
+        active:True
+    MenuButton:
+        text: 'STATUS'
+    MenuButton:
+        text: 'CALLS'
+
+<Foto@Widget>:
+    canvas:
+        Color:
+            rgba:1,1,1,1
+        Ellipse:
+            source:'assets/avatar.png'
+            size:self.size
+            pos:self.pos
+    size_hint_x:None
+    width:self.height
+    
+<MenuButton@Button>:
+    active: False
+    canvas:
+        Color:
+            rgba:1,1,1,1
+        Line:
+            width: 4 if root.active else 0.1
+            points:self.x, self.y, self.x+self.width, self.y
+    background_color:0,0,0,0
+    bold:True
+    color:(1,1,1,1) if root.active else (1,1,1,0.5)
+
+<Icon@Button>:
+    active:False
+    size_hint_x:None
+    width:self.height
+    border: 0,0,0,0
+    background_color: (1,1,1,1) if root.active else (1,1,1,0.5)
+    
